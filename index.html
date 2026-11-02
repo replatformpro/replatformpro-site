@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ReplatformPro: WooCommerce to Shopify, one fixed price</title>
+<meta name="description" content="We move WooCommerce stores to Shopify for one fixed price, with your rankings protected and your store ready to sell inside AI shopping assistants. Get a free migration plan.">
+<meta property="og:title" content="ReplatformPro: WooCommerce to Shopify, one fixed price">
+<meta property="og:description" content="Run your store, not your plugins. Get a free migration plan with a first look at your new homepage and one fixed price.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://replatformpro.com/">
+<meta name="theme-color" content="#0F241C">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F5F2EA;color:#14231C;font-family:'Geist',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#173A2C}a:hover{color:#0F241C}
+*{box-sizing:border-box}
+details summary{list-style:none;cursor:pointer}
+details summary::-webkit-details-marker{display:none}
+details[open] .rp-plus{transform:rotate(45deg)}
+.rp-fan{display:flex;justify-content:center;align-items:center;padding:48px 0 32px}
+.rp-fan>.rp-card{flex:none;margin-left:-40px;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s;box-shadow:0 18px 40px rgba(20,35,28,.18)}
+.rp-fan>.rp-card:first-child{margin-left:0}
+.rp-fan>.rp-card:nth-child(1){transform:rotate(-4deg) translateY(14px)}
+.rp-fan>.rp-card:nth-child(2){transform:rotate(2.5deg) translateY(-6px)}
+.rp-fan>.rp-card:nth-child(3){transform:rotate(-2deg) translateY(-16px)}
+.rp-fan>.rp-card:nth-child(4){transform:rotate(1.5deg) translateY(8px)}
+.rp-fan>.rp-card:nth-child(5){transform:rotate(3.5deg) translateY(20px)}
+.rp-fan>.rp-card:nth-child(6){transform:rotate(-3deg) translateY(-4px)}
+.rp-fan>.rp-card:nth-child(7){transform:rotate(2deg) translateY(-12px)}
+.rp-fan>.rp-card:hover{transform:rotate(0) translateY(-22px);z-index:5;box-shadow:0 28px 60px rgba(20,35,28,.3)}
+.rp-after{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.2fr) minmax(0,1fr);gap:28px;align-items:center}
+.rp-after-col{display:grid;gap:20px}
+.rp-stub{position:absolute;top:30px;width:28px;height:1px;background:#9FB3A8}
+.rp-stub::after{content:"";position:absolute;top:-3px;width:7px;height:7px;border-radius:99px;background:#2E6B4F}
+.rp-stub-r{right:-29px}.rp-stub-r::after{right:-4px}
+.rp-stub-l{left:-29px}.rp-stub-l::after{left:-4px}
+@media (max-width:1000px){.rp-after{grid-template-columns:1fr 1fr}.rp-after-screen{grid-column:1/-1;order:-1}.rp-stub{display:none}}
+@media (max-width:640px){.rp-after{grid-template-columns:1fr}}
+.rp-bio-stats>div>div:first-child{white-space:nowrap}
+@media (max-width:520px){.rp-bio{flex-direction:column;align-items:flex-start !important}.rp-bio-stats{grid-template-columns:1fr 1fr !important}.rp-bio-stats>div>div:first-child{font-size:28px !important}.rp-pill{border-radius:16px !important;gap:2px 10px !important}.rp-sep{display:none}}
+@media (max-width:640px){.rp-prod{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:16px 10px !important}}
+@media (min-width:1101px){.rp-fan>.rp-card{width:200px !important;height:280px !important;margin-left:-48px}.rp-fan>.rp-card:first-child{margin-left:0}.rp-fan .rp-card h3{font-size:29px !important}.rp-fan>.rp-card:last-child h3{font-size:38px !important}}
+.rp-show-sm{display:none !important}
+@media (max-width:1100px){
+.rp-fan{justify-content:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:28px 13vw 36px;margin:0 calc(-1 * clamp(16px, 4vw, 56px));gap:16px}
+.rp-fan::-webkit-scrollbar{display:none}
+.rp-fan>.rp-card,.rp-fan>.rp-card:first-child{margin-left:0;transform:none !important;scroll-snap-align:center;width:74vw !important;max-width:320px;height:auto !important;aspect-ratio:5 / 7}
+.rp-fan>.rp-card:hover{transform:none !important}
+.rp-show-sm{display:flex !important}
+}
+@media (prefers-reduced-motion:reduce){.rp-fan>.rp-card{transition:none}}
+@media (max-width:720px){.rp-hide-sm{display:none !important}}
+</style>
+
+</head>
+<body>
+
+
+<div style="width: 100%; font-family: 'Geist', system-ui, sans-serif; color: #14231C; background: #F5F2EA">
+
+<!-- NAV -->
+<header style="background: #0F241C; color: #F5F2EA; padding: 18px clamp(16px, 4vw, 56px)">
+<nav aria-label="Primary" style="max-width: 1240px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+<a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #F5F2EA">
+<svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="7" fill="#D8F36A"></rect><path d="M8 17l5-5 3 3 4-4" fill="none" stroke="#0F241C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 11h4v4" fill="none" stroke="#0F241C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span style="font-weight: 600; font-size: 18px; letter-spacing: -0.01em">ReplatformPro</span>
+</a>
+<div style="display: flex; align-items: center; gap: 28px; flex-wrap: wrap">
+<a class="rp-hide-sm" href="#costs" style="color: #C9D6CE; text-decoration: none; font-size: 15px">Why Switch</a>
+<a class="rp-hide-sm" href="#ai" style="color: #C9D6CE; text-decoration: none; font-size: 15px">AI Shopping</a>
+<a class="rp-hide-sm" href="#how" style="color: #C9D6CE; text-decoration: none; font-size: 15px">How It Works</a>
+<a class="rp-hide-sm" href="#faq" style="color: #C9D6CE; text-decoration: none; font-size: 15px">FAQ</a>
+<a href="mailto:jill@replatformpro.com?subject=Free%20migration%20plan%20for%20my%20WooCommerce%20store&amp;body=Hi%20Jill%2C%0A%0AI%27d%20like%20a%20free%20migration%20plan.%0A%0AStore%20URL%3A%0A%0AAnything%20custom%20about%20how%20your%20store%20works%3F%0A%0AWhich%20systems%20connect%20to%20your%20store%3F%0A" data-plan style="background: #D8F36A; color: #0F241C; text-decoration: none; font-weight: 600; font-size: 15px; padding: 12px 18px; border-radius: 999px; min-height: 44px; display: inline-flex; align-items: center">Get My Plan</a>
+</div>
+</nav>
+</header>
+
+<!-- HERO -->
+<section id="top" style="background: #0F241C; color: #F5F2EA; padding: clamp(48px, 7vw, 96px) clamp(16px, 4vw, 56px) clamp(64px, 8vw, 112px)">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 1 1 520px; min-width: 0">
+<div style="display: inline-flex; align-items: center; gap: 10px; border: 1px solid #2E5443; border-radius: 999px; padding: 7px 14px 7px 8px; font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.04em; color: #D8F36A; text-transform: uppercase">
+<span style="background: #D8F36A; color: #0F241C; border-radius: 999px; padding: 3px 9px; font-weight: 500">WooCommerce</span>
+<span>to Shopify, fixed price</span>
+</div>
+<h1 style="font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(48px, 6.4vw, 88px); line-height: 0.98; letter-spacing: -0.02em; margin: 28px 0 0">Run your store,<br><em style="color: #D8F36A">not your plugins.</em></h1>
+<p style="font-size: clamp(18px, 1.6vw, 21px); line-height: 1.55; color: #C9D6CE; margin: 28px 0 0; max-width: 560px">We move WooCommerce stores to Shopify for one fixed price. Refresh your design or stay close to the look you have now, and launch ready to sell inside AI shopping assistants. Your current store stays live until you approve the new one.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px">
+<a href="mailto:jill@replatformpro.com?subject=Free%20migration%20plan%20for%20my%20WooCommerce%20store&amp;body=Hi%20Jill%2C%0A%0AI%27d%20like%20a%20free%20migration%20plan.%0A%0AStore%20URL%3A%0A%0AAnything%20custom%20about%20how%20your%20store%20works%3F%0A%0AWhich%20systems%20connect%20to%20your%20store%3F%0A" data-plan style="background: #D8F36A; color: #0F241C; text-decoration: none; font-weight: 600; font-size: 17px; padding: 18px 26px; border-radius: 999px; display: inline-flex; align-items: center; gap: 10px; min-height: 56px">Get my free migration plan<svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+<a href="#how" style="color: #F5F2EA; text-decoration: none; font-weight: 500; font-size: 17px; padding: 18px 22px; border-radius: 999px; border: 1px solid #3A6150; display: inline-flex; align-items: center; min-height: 56px">See how it works</a>
+</div>
+<ul style="list-style: none; padding: 0; margin: 32px 0 0; display: flex; flex-wrap: wrap; gap: 10px 24px; font-size: 15px; color: #C9D6CE">
+<li style="display: flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#D8F36A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Ready for AI shopping</li>
+<li style="display: flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#D8F36A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>No sales call required</li>
+<li style="display: flex; align-items: center; gap: 8px"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#D8F36A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Pay in 3 milestones</li>
+</ul>
+</div>
+
+<!-- Hero plugin card -->
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; align-items: flex-end; justify-content: center">
+<div role="img" aria-label="Illustration: a WooCommerce store's long list of plugins, several flagged for updates or conflicts, compared with the same jobs built into Shopify" style="width: 100%; max-width: 500px; background: #F5F2EA; color: #14231C; border-radius: 20px; padding: 22px; box-shadow: 0 30px 80px rgba(0,0,0,0.4)">
+<div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #4F5D55">
+<span>Your store today</span><span style="background: #E4DFCF; color: #3E4C44; padding: 4px 10px; border-radius: 999px">WooCommerce</span>
+</div>
+<div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 6px">
+<span style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 10px; border-radius: 8px; background: #FBFAF6; border: 1px solid #DCD6C6; font-size: 13px">Caching<span style="font-family: 'Geist Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; background: #FBEFC8; color: #6B4500; padding: 2px 6px; border-radius: 4px">Update</span></span>
+<span style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 10px; border-radius: 8px; background: #FBFAF6; border: 1px solid #DCD6C6; font-size: 13px">Security<span style="font-family: 'Geist Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; background: #FDE2D3; color: #8A2C0D; padding: 2px 6px; border-radius: 4px">Critical</span></span>
+<span style="display: inline-flex; align-items: center; padding: 7px 10px; border-radius: 8px; background: #FBFAF6; border: 1px solid #DCD6C6; font-size: 13px">Backups</span>
+<span style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 10px; border-radius: 8px; background: #FBFAF6; border: 1px solid #DCD6C6; font-size: 13px">Payments<span style="font-family: 'Geist Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; background: #FDE2D3; color: #8A2C0D; padding: 2px 6px; border-radius: 4px">Conflict</span></span>
+<span style="display: inline-flex; align-items: center; padding: 7px 10px; border-radius: 8px; background: #FBFAF6; border: 1px solid #DCD6C6; font-size: 13px">SEO</span>
+<span style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 10px; border-radius: 8px; background: #FBFAF6; border: 1px solid #DCD6C6; font-size: 13px">Subscriptions<span style="font-family: 'Geist Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; background: #E4DFCF; color: #3E4C44; padding: 2px 6px; border-radius: 4px">Renew</span></span>
+<span style="display: inline-flex; align-items: center; padding: 7px 10px; border-radius: 8px; background: #FBFAF6; border: 1px solid #DCD6C6; font-size: 13px">Shipping</span>
+<span style="display: inline-flex; align-items: center; padding: 7px 10px; border-radius: 8px; background: #FBFAF6; border: 1px solid #DCD6C6; font-size: 13px">Tax</span>
+<span style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 10px; border-radius: 8px; background: #FBFAF6; border: 1px solid #DCD6C6; font-size: 13px">Meta pixel<span style="font-family: 'Geist Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em; background: #FDE2D3; color: #8A2C0D; padding: 2px 6px; border-radius: 4px">Error</span></span>
+<span style="display: inline-flex; align-items: center; padding: 7px 10px; border-radius: 8px; background: #FBFAF6; border: 1px solid #DCD6C6; font-size: 13px">Analytics</span>
+<span style="display: inline-flex; align-items: center; padding: 7px 10px; border-radius: 8px; background: #FBFAF6; border: 1px solid #DCD6C6; font-size: 13px">Reviews</span>
+<span style="display: inline-flex; align-items: center; padding: 7px 10px; border-radius: 8px; background: #FBFAF6; border: 1px solid #DCD6C6; font-size: 13px">Filters</span>
+<span style="display: inline-flex; align-items: center; padding: 7px 10px; border-radius: 8px; background: #FBFAF6; border: 1px solid #DCD6C6; font-size: 13px">Gift cards</span>
+<span style="display: inline-flex; align-items: center; padding: 7px 10px; border-radius: 8px; background: #FBFAF6; border: 1px solid #DCD6C6; font-size: 13px">Image optimizer</span>
+<span style="display: inline-flex; align-items: center; padding: 7px 10px; border-radius: 8px; border: 1px dashed #B9B19C; font-size: 13px; color: #4F5D55">+ 44 more</span>
+</div>
+<div style="display: flex; align-items: center; gap: 12px; margin: 18px 0">
+<span style="flex: 1; height: 1px; background: #DCD6C6"></span>
+<span style="width: 36px; height: 36px; border-radius: 999px; background: #D8F36A; display: inline-flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 3v10M4 9l4 4 4-4" fill="none" stroke="#0F241C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+<span style="flex: 1; height: 1px; background: #DCD6C6"></span>
+</div>
+<div style="background: #173A2C; color: #F5F2EA; border-radius: 14px; padding: 18px">
+<div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: #C9D6CE"><span>On Shopify</span><span style="background: #D8F36A; color: #0F241C; padding: 4px 10px; border-radius: 999px">Built in</span></div>
+<div style="margin-top: 14px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 14px; font-size: 14px">
+<span style="display: flex; align-items: center; gap: 8px"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#D8F36A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Hosting and speed</span>
+<span style="display: flex; align-items: center; gap: 8px"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#D8F36A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Security and SSL</span>
+<span style="display: flex; align-items: center; gap: 8px"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#D8F36A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Checkout and payments</span>
+<span style="display: flex; align-items: center; gap: 8px"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#D8F36A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Taxes and gift cards</span>
+<span style="display: flex; align-items: center; gap: 8px"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#D8F36A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Analytics</span>
+<span style="display: flex; align-items: center; gap: 8px"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#D8F36A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Ad channels, connected</span>
+</div>
+<div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid #2E5443; font-size: 14px; color: #C9D6CE">+ only the apps you actually need</div>
+</div>
+<p style="margin: 12px 0 0; font-size: 12px; color: #4F5D55; line-height: 1.5">Illustration. Every plugin gets reviewed during your build.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PROOF STRIP -->
+<section aria-label="At a glance" style="background: #173A2C; color: #F5F2EA; padding: 40px clamp(16px, 4vw, 56px)">
+<div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px 48px">
+<div><div style="font-family: 'Instrument Serif', Georgia, serif; font-size: 52px; line-height: 1; color: #D8F36A">Free</div><div style="font-size: 16px; color: #C9D6CE; margin-top: 10px; line-height: 1.5; max-width: 320px">Your migration plan: a first look at your new homepage, an AI search snapshot, what moves and one fixed price</div></div>
+<div><div style="font-family: 'Instrument Serif', Georgia, serif; font-size: 52px; line-height: 1; color: #D8F36A">5 days</div><div style="font-size: 16px; color: #C9D6CE; margin-top: 10px; line-height: 1.5; max-width: 320px">From your yes to your plan in your inbox, in business days</div></div>
+<div><div style="font-family: 'Instrument Serif', Georgia, serif; font-size: 52px; line-height: 1; color: #D8F36A">35+</div><div style="font-size: 16px; color: #C9D6CE; margin-top: 10px; line-height: 1.5; max-width: 320px">Shopify migrations our dev team has delivered for other agencies</div></div>
+</div>
+</section>
+
+<!-- CATEGORIES -->
+<section style="background: #EAE5D7; padding: clamp(72px, 9vw, 120px) clamp(16px, 4vw, 56px) clamp(56px, 7vw, 96px); overflow: hidden">
+<div style="max-width: 1240px; margin: 0 auto">
+<div style="text-align: center; max-width: 760px; margin: 0 auto">
+<div style="font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #2E6B4F">Stores like yours</div>
+<h2 style="font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.02; letter-spacing: -0.015em; margin: 16px 0 0">Every store is different. <em style="color: #2E6B4F">Your plan accounts for yours.</em></h2>
+<p style="font-size: 18px; line-height: 1.6; color: #3E4C44; margin: 20px auto 0; max-width: 600px">What makes a move simple or tricky isn't what you sell. It's how your store works. Your plan covers both.</p>
+</div>
+<div class="rp-fan" id="fan" style="margin-top: 32px">
+<article class="rp-card" style="position: relative; width: 236px; height: 330px; border-radius: 28px; border: 6px solid #8FA77F; background: #6E8761; overflow: hidden">
+<img loading="lazy" decoding="async" src="images/apparel.jpg" alt="Person in a beige hoodie and brown puffer jacket outdoors" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 45% 40%; transform: scale(1.35); transform-origin: 45% 42%">
+<span style="position: absolute; top: 0; right: 0; background: #0F241C; color: #F5F2EA; font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; padding: 9px 14px 9px 16px; border-bottom-left-radius: 16px">Sizes and colors</span>
+<div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 60px 18px 18px; background: linear-gradient(to top, rgba(15,36,28,0.72), rgba(15,36,28,0))">
+<h3 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: 34px; line-height: 0.98; color: #FFFFFF; letter-spacing: -0.01em">Apparel</h3>
+</div>
+</article>
+<article class="rp-card" style="position: relative; width: 236px; height: 330px; border-radius: 28px; border: 6px solid #D6B36A; background: #B5924A; overflow: hidden">
+<img loading="lazy" decoding="async" src="images/jewelry.jpg" alt="Gold rings with turquoise and carnelian stones on a pale stone" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 64%; transform: scale(1.12); transform-origin: 50% 64%">
+<span style="position: absolute; top: 0; right: 0; background: #0F241C; color: #F5F2EA; font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; padding: 9px 14px 9px 16px; border-bottom-left-radius: 16px">Custom options</span>
+<div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 60px 18px 18px; background: linear-gradient(to top, rgba(15,36,28,0.72), rgba(15,36,28,0))">
+<h3 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: 34px; line-height: 0.98; color: #FFFFFF; letter-spacing: -0.01em">Jewelry</h3>
+</div>
+</article>
+<article class="rp-card" style="position: relative; width: 236px; height: 330px; border-radius: 28px; border: 6px solid #D9A88E; background: #B8856B; overflow: hidden">
+<img loading="lazy" decoding="async" src="images/beauty.jpg" alt="Close-up of a face with a pink exfoliating mask on the cheek" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%">
+<span style="position: absolute; top: 0; right: 0; background: #0F241C; color: #F5F2EA; font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; padding: 9px 14px 9px 16px; border-bottom-left-radius: 16px">Bundles and kits</span>
+<div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 60px 18px 18px; background: linear-gradient(to top, rgba(15,36,28,0.72), rgba(15,36,28,0))">
+<h3 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: 34px; line-height: 0.98; color: #FFFFFF; letter-spacing: -0.01em">Beauty and wellness</h3>
+</div>
+</article>
+<article class="rp-card" style="position: relative; width: 236px; height: 330px; border-radius: 28px; border: 6px solid #9DB2BF; background: #7891A0; overflow: hidden">
+<img loading="lazy" decoding="async" src="images/home.jpg" alt="Stack of folded linens in soft colors on a wooden stool" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 40% 75%; transform: scale(1.5); transform-origin: 40% 75%">
+<span style="position: absolute; top: 0; right: 0; background: #0F241C; color: #F5F2EA; font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; padding: 9px 14px 9px 16px; border-bottom-left-radius: 16px">Freight shipping</span>
+<div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 60px 18px 18px; background: linear-gradient(to top, rgba(15,36,28,0.72), rgba(15,36,28,0))">
+<h3 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: 34px; line-height: 0.98; color: #FFFFFF; letter-spacing: -0.01em">Home and furniture</h3>
+</div>
+</article>
+<article class="rp-card" style="position: relative; width: 236px; height: 330px; border-radius: 28px; border: 6px solid #C99BA8; background: #A87986; overflow: hidden">
+<img loading="lazy" decoding="async" src="images/food-drink.jpg" alt="Pink can next to a glass of iced water" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 47% 50%; transform: scale(1.15); transform-origin: 50% 80%">
+<span style="position: absolute; top: 0; right: 0; background: #0F241C; color: #F5F2EA; font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; padding: 9px 14px 9px 16px; border-bottom-left-radius: 16px">Wholesale pricing</span>
+<div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 60px 18px 18px; background: linear-gradient(to top, rgba(15,36,28,0.72), rgba(15,36,28,0))">
+<h3 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: 34px; line-height: 0.98; color: #FFFFFF; letter-spacing: -0.01em">Food and drink</h3>
+</div>
+</article>
+<article class="rp-card" style="position: relative; width: 236px; height: 330px; border-radius: 28px; border: 6px solid #7F9C8C; background: #5E7B6C; overflow: hidden">
+<img loading="lazy" decoding="async" src="images/pet.jpg" alt="Corgi on a leash looking up at its owner" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 55% 55%">
+<span style="position: absolute; top: 0; right: 0; background: #0F241C; color: #F5F2EA; font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; padding: 9px 14px 9px 16px; border-bottom-left-radius: 16px">Auto-ship</span>
+<div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 60px 18px 18px; background: linear-gradient(to top, rgba(15,36,28,0.72), rgba(15,36,28,0))">
+<h3 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: 34px; line-height: 0.98; color: #FFFFFF; letter-spacing: -0.01em">Pet supplies</h3>
+</div>
+</article>
+<article class="rp-card" style="position: relative; width: 236px; height: 330px; border-radius: 28px; border: 6px solid #0F241C; background: #D8F36A; overflow: hidden; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 24px">
+<span style="position: absolute; top: 0; right: 0; background: #0F241C; color: #D8F36A; font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; padding: 9px 14px 9px 16px; border-bottom-left-radius: 16px">Your setup</span>
+<h3 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: 46px; line-height: 0.95; color: #0F241C">Your store <em>here</em></h3>
+<a href="mailto:jill@replatformpro.com?subject=Free%20migration%20plan%20for%20my%20WooCommerce%20store&amp;body=Hi%20Jill%2C%0A%0AI%27d%20like%20a%20free%20migration%20plan.%0A%0AStore%20URL%3A%0A%0AAnything%20custom%20about%20how%20your%20store%20works%3F%0A%0AWhich%20systems%20connect%20to%20your%20store%3F%0A" data-plan style="margin-top: 22px; background: #0F241C; color: #F5F2EA; text-decoration: none; font-weight: 600; font-size: 15px; padding: 13px 20px; border-radius: 999px; min-height: 44px; display: inline-flex; align-items: center; gap: 8px">Get my free plan<svg width="14" height="14" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+<span style="margin-top: 12px; font-size: 13px; color: #23402F">Mapped to your products, in 5 business days</span>
+</article>
+</div>
+<div class="rp-show-sm" style="flex-direction: column; align-items: center; gap: 12px; margin-top: 8px; text-align: center">
+<span style="font-family: 'Geist Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #4F5D55">Swipe to see more</span>
+<a href="mailto:jill@replatformpro.com?subject=Free%20migration%20plan%20for%20my%20WooCommerce%20store&amp;body=Hi%20Jill%2C%0A%0AI%27d%20like%20a%20free%20migration%20plan.%0A%0AStore%20URL%3A%0A%0AAnything%20custom%20about%20how%20your%20store%20works%3F%0A%0AWhich%20systems%20connect%20to%20your%20store%3F%0A" data-plan style="margin-top: 8px; border: 1.5px solid #0F241C; color: #0F241C; text-decoration: none; font-weight: 600; font-size: 17px; padding: 15px 26px; border-radius: 999px; min-height: 52px; display: inline-flex; align-items: center; gap: 10px">Get my free plan<svg width="16" height="16" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+<span style="font-size: 14px; color: #3E4C44">Free, and in your inbox in 5 business days</span>
+</div>
+</div>
+</section>
+
+<!-- COSTS -->
+<section id="costs" style="padding: clamp(72px, 9vw, 128px) clamp(16px, 4vw, 56px)">
+<div style="max-width: 1240px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: end; justify-content: space-between">
+<div style="flex: 1 1 560px; min-width: 0">
+<div style="font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #2E6B4F">Life on WooCommerce</div>
+<h2 style="font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.02; letter-spacing: -0.015em; margin: 16px 0 0">Stop being your store's <em style="color: #2E6B4F">IT department.</em></h2>
+</div>
+<p style="flex: 1 1 380px; min-width: 0; font-size: 18px; line-height: 1.6; color: #3E4C44; margin: 0">WooCommerce gives you control, and with it every job nobody warned you about: updates, conflicts, security patches and tracking setup. Here's what store owners run into most.</p>
+</div>
+<div style="margin-top: 72px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 56px 48px">
+<div style="border-top: 1px solid #C9C2AE; padding-top: 22px; min-width: 0"><div style="display: flex; align-items: center; gap: 10px; font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #2E6B4F"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 2v4M10 2v4M4 6h8v3a4 4 0 01-8 0zM8 13v2" fill="none" stroke="#2E6B4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>Plugins to babysit</div><div style="font-family: 'Instrument Serif', Georgia, serif; font-size: clamp(80px, 8.5vw, 128px); line-height: 0.9; letter-spacing: -0.03em; color: #14231C; margin-top: 22px">58</div><p style="margin: 18px 0 0; font-size: 17px; line-height: 1.55; color: #3E4C44; max-width: 360px">The average WooCommerce store runs 58 active plugins, each with its own updates, renewals and vendor.<sup style="font-size: 11px">1</sup></p></div>
+<div style="border-top: 1px solid #C9C2AE; padding-top: 22px; min-width: 0"><div style="display: flex; align-items: center; gap: 10px; font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #2E6B4F"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h4l1.5-3 2 6L11 8h3" fill="none" stroke="#2E6B4F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>Updates that break things</div><div style="font-family: 'Instrument Serif', Georgia, serif; font-size: clamp(80px, 8.5vw, 128px); line-height: 0.9; letter-spacing: -0.03em; color: #14231C; margin-top: 22px">#1</div><p style="margin: 18px 0 0; font-size: 17px; line-height: 1.55; color: #3E4C44; max-width: 360px">Plugin conflicts are the top cause of WooCommerce problems. One update, and the cart stops working on a Friday night.<sup style="font-size: 11px">2</sup></p></div>
+<div style="border-top: 1px solid #C9C2AE; padding-top: 22px; min-width: 0"><div style="display: flex; align-items: center; gap: 10px; font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #2E6B4F"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5l5.5 2v4c0 3.3-2.3 6-5.5 7-3.2-1-5.5-3.7-5.5-7v-4z" fill="none" stroke="#2E6B4F" stroke-width="1.6" stroke-linejoin="round"></path></svg>Security is your job</div><div style="font-family: 'Instrument Serif', Georgia, serif; font-size: clamp(80px, 8.5vw, 128px); line-height: 0.9; letter-spacing: -0.03em; color: #14231C; margin-top: 22px">91%</div><p style="margin: 18px 0 0; font-size: 17px; line-height: 1.55; color: #3E4C44; max-width: 360px">Of the 11,334 WordPress vulnerabilities found in 2025, 91% were in plugins. Patching them falls to you.<sup style="font-size: 11px">3</sup></p></div>
+</div>
+<div style="margin-top: 64px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 56px 48px">
+<div style="border-top: 1px solid #C9C2AE; padding-top: 22px; min-width: 0"><div style="display: flex; align-items: center; gap: 10px; font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #2E6B4F"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 14h12M4 11V8M8 11V4M12 11V6" fill="none" stroke="#2E6B4F" stroke-width="1.6" stroke-linecap="round"></path></svg>Numbers you can't trust</div><div style="font-family: 'Instrument Serif', Georgia, serif; font-size: clamp(80px, 8.5vw, 128px); line-height: 0.9; letter-spacing: -0.03em; color: #14231C; margin-top: 22px">100%</div><p style="margin: 18px 0 0; font-size: 17px; line-height: 1.55; color: #3E4C44; max-width: 360px">of audited WooCommerce stores using GA4 tracked sales in the browser only, so blocked or redirected checkouts go unrecorded. Ad pixels need their own plugins and setup.<sup style="font-size: 11px">4</sup></p></div>
+<div style="border-top: 1px solid #C9C2AE; padding-top: 22px; min-width: 0"><div style="display: flex; align-items: center; gap: 10px; font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #2E6B4F"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M9 1L3 9h4l-1 6 6-8H8z" fill="none" stroke="#2E6B4F" stroke-width="1.6" stroke-linejoin="round"></path></svg>Slower pages, fewer sales</div><div style="font-family: 'Instrument Serif', Georgia, serif; font-size: clamp(80px, 8.5vw, 128px); line-height: 0.9; letter-spacing: -0.03em; color: #14231C; margin-top: 22px">57%</div><p style="margin: 18px 0 0; font-size: 17px; line-height: 1.55; color: #3E4C44; max-width: 360px">of WooCommerce stores pass Google's loading speed benchmark. In a Deloitte study, a 0.1s faster mobile site lifted retail conversions 8.4%.<sup style="font-size: 11px">5</sup></p><div role="img" aria-label="Pass rate for Google's loading speed benchmark: WooCommerce 57 percent, Shopify 94 percent" style="margin-top: 22px; display: grid; gap: 10px; max-width: 420px"><div style="display: grid; grid-template-columns: 110px 1fr 44px; align-items: center; gap: 12px; font-size: 14px"><span style="color: #3E4C44">WooCommerce</span><span style="height: 10px; border-radius: 99px; background: #DCD6C6; overflow: hidden"><span style="display: block; height: 100%; width: 57%; background: #B9B19C; border-radius: 99px"></span></span><span style="font-family: 'Geist Mono', monospace; color: #3E4C44; text-align: right">57%</span></div><div style="display: grid; grid-template-columns: 110px 1fr 44px; align-items: center; gap: 12px; font-size: 14px"><span style="color: #3E4C44">Shopify</span><span style="height: 10px; border-radius: 99px; background: #DCD6C6; overflow: hidden"><span style="display: block; height: 100%; width: 94%; background: #2E6B4F; border-radius: 99px"></span></span><span style="font-family: 'Geist Mono', monospace; color: #14231C; text-align: right">94%</span></div></div></div>
+</div>
+<div style="margin-top: 80px; padding: clamp(24px, 3vw, 36px); border-radius: 18px; background: #EEF5D4">
+<div style="display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 20px">
+<div style="flex: 1 1 420px; min-width: 0">
+<div style="font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #2E6B4F">Your free plan</div>
+<h3 style="font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3vw, 40px); line-height: 1.08; letter-spacing: -0.01em; margin: 10px 0 0">See your store on Shopify <em style="color: #2E6B4F">before you decide.</em></h3>
+</div>
+<a href="mailto:jill@replatformpro.com?subject=Free%20migration%20plan%20for%20my%20WooCommerce%20store&amp;body=Hi%20Jill%2C%0A%0AI%27d%20like%20a%20free%20migration%20plan.%0A%0AStore%20URL%3A%0A%0AAnything%20custom%20about%20how%20your%20store%20works%3F%0A%0AWhich%20systems%20connect%20to%20your%20store%3F%0A" data-plan style="background: #0F241C; color: #D8F36A; text-decoration: none; font-weight: 600; font-size: 16px; padding: 14px 22px; border-radius: 999px; min-height: 48px; display: inline-flex; align-items: center; white-space: nowrap">Get my free plan</a>
+</div>
+<div style="margin-top: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px">
+<div style="background: #FBFAF6; border-radius: 14px; padding: 20px">
+<div style="font-family: 'Geist Mono', monospace; font-size: 13px; color: #2E6B4F">01</div>
+<div style="font-weight: 600; font-size: 17px; margin-top: 10px">A first look at your new homepage</div>
+<div style="font-size: 15px; line-height: 1.5; color: #3E4C44; margin-top: 6px">Refreshed, or close to the look you have now.</div>
+</div>
+<div style="background: #FBFAF6; border-radius: 14px; padding: 20px">
+<div style="font-family: 'Geist Mono', monospace; font-size: 13px; color: #2E6B4F">02</div>
+<div style="font-weight: 600; font-size: 17px; margin-top: 10px">An AI search snapshot</div>
+<div style="font-size: 15px; line-height: 1.5; color: #3E4C44; margin-top: 6px">How ready your products are to be found in AI shopping assistants.</div>
+</div>
+<div style="background: #FBFAF6; border-radius: 14px; padding: 20px">
+<div style="font-family: 'Geist Mono', monospace; font-size: 13px; color: #2E6B4F">03</div>
+<div style="font-weight: 600; font-size: 17px; margin-top: 10px">What moves</div>
+<div style="font-size: 15px; line-height: 1.5; color: #3E4C44; margin-top: 6px">Products, customers, orders and content.</div>
+</div>
+<div style="background: #FBFAF6; border-radius: 14px; padding: 20px">
+<div style="font-family: 'Geist Mono', monospace; font-size: 13px; color: #2E6B4F">04</div>
+<div style="font-weight: 600; font-size: 17px; margin-top: 10px">One fixed price</div>
+<div style="font-size: 15px; line-height: 1.5; color: #3E4C44; margin-top: 6px">The whole project, paid in three milestones.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- AI SHOPPING -->
+<section id="ai" style="background: #0F241C; color: #F5F2EA; padding: clamp(72px, 9vw, 128px) clamp(16px, 4vw, 56px)">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
+<div style="flex: 1 1 480px; min-width: 0">
+<div style="font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #D8F36A">A new sales channel</div>
+<h2 style="font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.02; letter-spacing: -0.015em; margin: 16px 0 0">Your customers started shopping <em style="color: #D8F36A">in the chat.</em></h2>
+<p style="font-size: 18px; line-height: 1.6; color: #C9D6CE; margin: 24px 0 0">Since March 2026, products from eligible US Shopify stores are discoverable and shoppable inside ChatGPT, Microsoft Copilot, Google AI Mode and Gemini by default. Shoppers ask, compare and check out without opening a browser tab.</p>
+<p style="font-size: 18px; line-height: 1.6; color: #C9D6CE; margin: 16px 0 0">Being eligible is step one. Being recommended takes complete product data and clean structured data. Every ReplatformPro migration launches <strong style="color: #F5F2EA; font-weight: 600">AI Search Ready</strong>.</p>
+<ul style="list-style: none; padding: 0; margin: 28px 0 0; display: grid; gap: 12px; font-size: 16px">
+<li style="display: flex; gap: 12px"><span style="color: #D8F36A; font-family: 'Geist Mono', monospace">+</span>Product titles, descriptions and attributes completed</li>
+<li style="display: flex; gap: 12px"><span style="color: #D8F36A; font-family: 'Geist Mono', monospace">+</span>Structured data for products, reviews, FAQs and your business</li>
+<li style="display: flex; gap: 12px"><span style="color: #D8F36A; font-family: 'Geist Mono', monospace">+</span>Agentic Storefronts turned on and checked at launch</li>
+</ul>
+</div>
+<div style="flex: 1 1 420px; min-width: 0; display: flex; justify-content: center">
+<div role="img" aria-label="Illustration of a shopper asking an AI assistant for a product and seeing a shoppable product card" style="width: 100%; max-width: 460px; background: #173A2C; border: 1px solid #2E5443; border-radius: 22px; padding: 22px">
+<div style="display: flex; justify-content: flex-end">
+<div style="background: #F5F2EA; color: #14231C; border-radius: 18px 18px 4px 18px; padding: 14px 16px; font-size: 15px; line-height: 1.45; max-width: 82%">I'm trying to find the perfect red lipstick. A true red that isn't too orange and won't make my teeth look yellow. Any ideas?</div>
+</div>
+<div style="margin-top: 16px; display: flex; gap: 10px; align-items: flex-start">
+<span style="width: 30px; height: 30px; border-radius: 999px; background: #2E5443; flex: none; display: inline-flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2l1.6 4.4L14 8l-4.4 1.6L8 14l-1.6-4.4L2 8l4.4-1.6z" fill="#D8F36A"></path></svg></span>
+<div style="flex: 1; min-width: 0">
+<div style="font-size: 15px; line-height: 1.45; color: #C9D6CE">Try this one from an independent beauty brand. It's a blue-based red, so it stays true red and makes teeth look brighter:</div>
+<div style="margin-top: 12px; background: #FBFAF6; color: #14231C; border-radius: 16px; overflow: hidden">
+<div style="position: relative; height: 200px; background: linear-gradient(90deg, #FC4240 0%, #FC4240 34%, #B72120 66%, #B72120 100%); overflow: hidden"><img loading="lazy" decoding="async" src="images/lipstick.jpg" alt="Red lipstick against a red background" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: 50% 50%"></div>
+<div style="padding: 14px 16px; display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<div><div style="font-weight: 600; font-size: 15px">Satin lipstick in Main Character</div><div style="font-size: 13px; color: #4F5D55; margin-top: 2px">$28 · yourstore.com</div></div>
+<span style="background: #0F241C; color: #D8F36A; font-size: 14px; font-weight: 600; padding: 9px 14px; border-radius: 999px; white-space: nowrap">Buy in chat</span>
+</div>
+</div>
+</div>
+</div>
+<p style="font-size: 12px; color: #9FB3A8; margin: 18px 0 0; line-height: 1.5">Illustration. Availability depends on Shopify's eligibility rules for US merchants.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WHAT YOU GET -->
+<section style="padding: clamp(72px, 9vw, 128px) clamp(16px, 4vw, 56px)">
+<div style="max-width: 1320px; margin: 0 auto">
+<div style="text-align: center; max-width: 760px; margin: 0 auto">
+<div style="font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #2E6B4F">Every migration includes</div>
+<h2 style="font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.02; letter-spacing: -0.015em; margin: 16px 0 0">Everything you built, <em style="color: #2E6B4F">on a better platform.</em></h2>
+</div>
+<div class="rp-after" style="margin-top: 64px">
+<div class="rp-after-col">
+<div style="position: relative; background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 16px; padding: 18px 18px 20px">
+<span class="rp-stub rp-stub-r" aria-hidden="true"></span>
+<div style="display: flex; align-items: center; gap: 10px"><span style="width: 26px; height: 26px; border-radius: 999px; background: #D8F36A; color: #0F241C; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; flex: none">1</span><h3 style="margin: 0; font-size: 18px; font-weight: 600; letter-spacing: -0.01em">AI Search Ready</h3></div>
+<p style="margin: 10px 0 0; font-size: 15px; line-height: 1.55; color: #3E4C44">Product data and structured data set up so AI shopping assistants can find and recommend what you sell.</p>
+</div>
+<div style="position: relative; background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 16px; padding: 18px 18px 20px">
+<span class="rp-stub rp-stub-r" aria-hidden="true"></span>
+<div style="display: flex; align-items: center; gap: 10px"><span style="width: 26px; height: 26px; border-radius: 999px; background: #D8F36A; color: #0F241C; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; flex: none">2</span><h3 style="margin: 0; font-size: 18px; font-weight: 600; letter-spacing: -0.01em">Built for speed</h3></div>
+<p style="margin: 10px 0 0; font-size: 15px; line-height: 1.55; color: #3E4C44">A lean theme, optimized images and only the apps you need, with page speed checked before launch.</p>
+</div>
+<div style="position: relative; background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 16px; padding: 18px 18px 20px">
+<span class="rp-stub rp-stub-r" aria-hidden="true"></span>
+<div style="display: flex; align-items: center; gap: 10px"><span style="width: 26px; height: 26px; border-radius: 999px; background: #D8F36A; color: #0F241C; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; flex: none">3</span><h3 style="margin: 0; font-size: 18px; font-weight: 600; letter-spacing: -0.01em">Your look, your call</h3></div>
+<p style="margin: 10px 0 0; font-size: 15px; line-height: 1.55; color: #3E4C44">Refresh your design to convert better, or stay close to the look your customers know. You approve it before launch.</p>
+</div>
+</div>
+<div class="rp-after-screen" style="min-width: 0">
+<div role="img" aria-label="Illustration of a new Shopify store with numbered callouts for AI shopping, speed, design, moved data, SEO redirects and automatic updates" style="position: relative; background: #FBFAF6; border-radius: 18px; border: 1px solid #DCD6C6; box-shadow: 0 40px 90px rgba(20,35,28,0.22); overflow: visible">
+<div style="display: flex; align-items: center; gap: 10px; padding: 12px 14px; border-bottom: 1px solid #DCD6C6; background: #F1EDE2; border-radius: 18px 18px 0 0">
+<span style="display: flex; gap: 6px"><span style="width: 10px; height: 10px; border-radius: 99px; background: #D9D2BF"></span><span style="width: 10px; height: 10px; border-radius: 99px; background: #D9D2BF"></span><span style="width: 10px; height: 10px; border-radius: 99px; background: #D9D2BF"></span></span>
+<span style="position: relative; flex: 1; min-width: 0; display: flex; align-items: center; gap: 8px; background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 999px; padding: 6px 12px; font-family: 'Geist Mono', monospace; font-size: 12px; color: #3E4C44; white-space: nowrap; overflow: hidden">alderrow.com/products/knot-handle-mini<span class="rp-hide-sm" style="margin-left: auto; background: #EEF5D4; color: #23402F; border-radius: 999px; padding: 2px 8px; font-size: 11px">301 from /product/knot-handle-mini/</span></span>
+<span style="position: relative; display: inline-flex; align-items: center; gap: 6px; background: #173A2C; color: #D8F36A; border-radius: 999px; padding: 6px 10px; font-family: 'Geist Mono', monospace; font-size: 11px; white-space: nowrap"><svg width="10" height="10" viewBox="0 0 16 16" aria-hidden="true"><path d="M9 1L3 9h4l-1 6 6-8H8z" fill="#D8F36A"></path></svg>Fast load</span>
+</div>
+<span aria-hidden="true" style="position: absolute; top: 4px; left: 44%; width: 26px; height: 26px; border-radius: 999px; background: #D8F36A; color: #0F241C; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 4px rgba(216,243,106,0.35)">5</span>
+<span aria-hidden="true" style="position: absolute; top: -10px; right: -10px; width: 26px; height: 26px; border-radius: 999px; background: #D8F36A; color: #0F241C; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 4px rgba(216,243,106,0.35)">2</span>
+<div style="position: relative; padding: 16px">
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 0 2px 12px"><span style="font-family: 'Instrument Serif', Georgia, serif; font-size: 22px; line-height: 1; color: #14231C">Alder Row</span><span class="rp-hide-sm" style="display: flex; gap: 16px; font-size: 12px; color: #3E4C44"><span>Handbags</span><span>Shoes</span><span>New in</span><span>Cart (0)</span></span></div>
+<div style="position: relative; border-radius: 12px; overflow: hidden; background: #F2C9CD; display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.1fr); min-height: 210px">
+<span aria-hidden="true" style="position: absolute; top: 12px; right: 12px; z-index: 2; width: 26px; height: 26px; border-radius: 999px; background: #D8F36A; color: #0F241C; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 4px rgba(216,243,106,0.35)">3</span>
+<div style="padding: clamp(18px, 2.6vw, 32px); display: flex; flex-direction: column; justify-content: center"><span style="font-family: 'Geist Mono', monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: #B03A5B">New season</span><span style="margin-top: 8px; font-family: 'Instrument Serif', Georgia, serif; font-size: clamp(24px, 2.6vw, 36px); line-height: 1; color: #14231C">Bags that go <em>everywhere</em></span><span style="margin-top: 14px; align-self: flex-start; background: #14231C; color: #FFFFFF; font-size: 12px; padding: 8px 14px; border-radius: 999px">Shop handbags</span></div>
+<div style="position: relative"><img loading="lazy" decoding="async" src="images/store-hero.jpg" alt="Person in a pink blazer carrying a yellow bucket bag" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 82%"></div>
+</div>
+<div class="rp-prod" style="position: relative; margin-top: 14px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px">
+<span aria-hidden="true" style="position: absolute; top: -12px; right: -10px; z-index: 2; width: 26px; height: 26px; border-radius: 999px; background: #D8F36A; color: #0F241C; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 4px rgba(216,243,106,0.35)">4</span>
+<div style="position: relative; display: grid; gap: 6px; outline: 2px solid #D8F36A; outline-offset: 4px; border-radius: 8px"><span aria-hidden="true" style="position: absolute; top: -14px; right: -14px; z-index: 2; width: 26px; height: 26px; border-radius: 999px; background: #D8F36A; color: #0F241C; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 4px rgba(216,243,106,0.35)">1</span><div style="position: relative; aspect-ratio: 1; border-radius: 8px; overflow: hidden; background: #E4DFCF"><img loading="lazy" decoding="async" src="images/product-green-bag.jpg" alt="Green knot-handle bag held against a pink background" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 72%"></div><div style="display: flex; justify-content: space-between; gap: 6px; font-size: 11px; color: #14231C; line-height: 1.25"><span style="min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">Knot handle mini</span><span style="font-family: 'Geist Mono', monospace; color: #3E4C44">$218</span></div><span style="justify-self: start; background: #0F241C; color: #D8F36A; font-size: 10px; font-weight: 600; padding: 4px 8px; border-radius: 999px; white-space: nowrap">Buy in chat</span></div>
+<div style="display: grid; gap: 6px"><div style="position: relative; aspect-ratio: 1; border-radius: 8px; overflow: hidden; background: #E4DFCF"><img loading="lazy" decoding="async" src="images/product-yellow-bag.jpg" alt="Yellow ruched shoulder bag against an orange wall" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 45% 60%"></div><div style="display: flex; justify-content: space-between; gap: 6px; font-size: 11px; color: #14231C; line-height: 1.25"><span style="min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">Ruched crescent</span><span style="font-family: 'Geist Mono', monospace; color: #3E4C44">$224</span></div></div>
+<div style="display: grid; gap: 6px"><div style="position: relative; aspect-ratio: 1; border-radius: 8px; overflow: hidden; background: #E4DFCF"><img loading="lazy" decoding="async" src="images/product-buckle-bag.jpg" alt="Black buckle bag with matching buckle boots" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 42% 40%"></div><div style="display: flex; justify-content: space-between; gap: 6px; font-size: 11px; color: #14231C; line-height: 1.25"><span style="min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">Buckle bag</span><span style="font-family: 'Geist Mono', monospace; color: #3E4C44">$310</span></div></div>
+<div style="display: grid; gap: 6px"><div style="position: relative; aspect-ratio: 1; border-radius: 8px; overflow: hidden; background: #E4DFCF"><img loading="lazy" decoding="async" src="images/product-cream-bag.jpg" alt="Cream croc-embossed top-handle bag" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 68%"></div><div style="display: flex; justify-content: space-between; gap: 6px; font-size: 11px; color: #14231C; line-height: 1.25"><span style="min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">Croc top-handle</span><span style="font-family: 'Geist Mono', monospace; color: #3E4C44">$236</span></div></div>
+</div>
+<div style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between">
+<span style="display: inline-flex; align-items: center; gap: 8px; background: #173A2C; color: #F5F2EA; border-radius: 10px; padding: 8px 12px; font-size: 12px"><svg width="12" height="12" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#D8F36A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>1,240 products · 8,600 orders moved</span>
+<span style="position: relative; display: inline-flex; align-items: center; gap: 8px; background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 10px; padding: 8px 12px; font-size: 12px; color: #3E4C44"><span aria-hidden="true" style="position: absolute; top: -12px; left: -12px; width: 26px; height: 26px; border-radius: 999px; background: #D8F36A; color: #0F241C; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 4px rgba(216,243,106,0.35)">6</span><span style="width: 7px; height: 7px; border-radius: 99px; background: #2E6B4F"></span>New Shopify features installed</span>
+</div>
+</div>
+</div>
+<p style="margin: 14px 0 0; text-align: center; font-size: 12px; color: #4F5D55">Illustration with example numbers.</p>
+</div>
+<div class="rp-after-col">
+<div style="position: relative; background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 16px; padding: 18px 18px 20px">
+<span class="rp-stub rp-stub-l" aria-hidden="true"></span>
+<div style="display: flex; align-items: center; gap: 10px"><span style="width: 26px; height: 26px; border-radius: 999px; background: #D8F36A; color: #0F241C; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; flex: none">4</span><h3 style="margin: 0; font-size: 18px; font-weight: 600; letter-spacing: -0.01em">Everything moves</h3></div>
+<p style="margin: 10px 0 0; font-size: 15px; line-height: 1.55; color: #3E4C44">Products, variants, customers, order history, posts and pages, with every plugin reviewed and covered.</p>
+</div>
+<div style="position: relative; background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 16px; padding: 18px 18px 20px">
+<span class="rp-stub rp-stub-l" aria-hidden="true"></span>
+<div style="display: flex; align-items: center; gap: 10px"><span style="width: 26px; height: 26px; border-radius: 999px; background: #D8F36A; color: #0F241C; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; flex: none">5</span><h3 style="margin: 0; font-size: 18px; font-weight: 600; letter-spacing: -0.01em">SEO-protected</h3></div>
+<p style="margin: 10px 0 0; font-size: 15px; line-height: 1.55; color: #3E4C44">Every URL mapped and redirected, content and metadata preserved, 30 days of monitoring with fixes.</p>
+</div>
+<div style="position: relative; background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 16px; padding: 18px 18px 20px">
+<span class="rp-stub rp-stub-l" aria-hidden="true"></span>
+<div style="display: flex; align-items: center; gap: 10px"><span style="width: 26px; height: 26px; border-radius: 999px; background: #D8F36A; color: #0F241C; font-family: 'Geist Mono', monospace; font-size: 12px; font-weight: 500; display: inline-flex; align-items: center; justify-content: center; flex: none">6</span><h3 style="margin: 0; font-size: 18px; font-weight: 600; letter-spacing: -0.01em">Always up to date</h3></div>
+<p style="margin: 10px 0 0; font-size: 15px; line-height: 1.55; color: #3E4C44">Shopify ships new features twice a year and installs them for you. No plugin updates to babysit.</p>
+</div>
+</div>
+</div>
+<div style="margin-top: 36px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 14px">
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 11px 18px; border-radius: 999px; background: #173A2C; color: #F5F2EA; font-size: 15px"><span style="color: #D8F36A; font-family: 'Geist Mono', monospace">$</span>One fixed price, paid in 3 milestones</span>
+<span style="display: inline-flex; align-items: center; gap: 10px; padding: 11px 18px; border-radius: 999px; background: #173A2C; color: #F5F2EA; font-size: 15px"><span style="width: 8px; height: 8px; border-radius: 99px; background: #D8F36A"></span>Your current store keeps selling until launch day</span>
+</div>
+<p style="margin: 28px auto 0; max-width: 760px; text-align: center; font-family: 'Instrument Serif', Georgia, serif; font-size: clamp(22px, 2.2vw, 28px); line-height: 1.3; color: #14231C">The same platform behind <em style="color: #2E6B4F">Skims, Glossier, Mejuri and BARK.</em><sup style="font-family: 'Geist', sans-serif; font-size: 11px; color: #4F5D55">6</sup></p>
+<div style="margin-top: 48px; display: flex; flex-wrap: wrap; align-items: center; gap: 14px 20px; padding: 16px 24px; border-radius: 18px; background: transparent; border: 1px solid #C9C2AE; color: #14231C">
+<span style="width: 36px; height: 36px; border-radius: 10px; background: #D8F36A; display: inline-flex; align-items: center; justify-content: center; flex: none"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 3l8 5-8 5z" fill="#0F241C"></path></svg></span>
+<span style="font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #2E6B4F; flex: none">And after launch</span>
+<span style="flex: 1 1 360px; min-width: 0; font-size: 17px; line-height: 1.5; color: #3E4C44">Short video lessons on running your new store, a personal walkthrough recorded on your store, and 30 days of monitoring and fixes.</span>
+</div>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" style="padding: clamp(72px, 9vw, 128px) clamp(16px, 4vw, 56px)">
+<div style="max-width: 1240px; margin: 0 auto">
+<div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: end; justify-content: space-between">
+<div style="flex: 1 1 560px; min-width: 0">
+<div style="font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #2E6B4F">How it works</div>
+<h2 style="font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.02; letter-spacing: -0.015em; margin: 16px 0 0">Three steps. <em style="color: #2E6B4F">Zero sales calls.</em></h2>
+</div>
+<p style="flex: 1 1 360px; min-width: 0; font-size: 18px; line-height: 1.6; color: #3E4C44; margin: 0">Everything happens over email, on your schedule. If you'd rather talk it through, we're happy to. It's just never required.</p>
+</div>
+<div style="margin-top: 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px">
+<div style="background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 18px; padding: 32px; position: relative">
+<div style="font-family: 'Instrument Serif', Georgia, serif; font-size: 72px; line-height: 0.9; color: #2E6B4F">1</div>
+<h3 style="font-size: 22px; font-weight: 600; margin: 22px 0 0">Say yes</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #3E4C44; margin: 10px 0 0">Reply "yes" to our email, or send your store URL to jill@replatformpro.com. We'll ask two quick questions about custom features and the systems connected to your store. We work from what we can see on your live store, so there's nothing to log in to or hand over at this stage. If we need something specific, we'll ask.</p>
+</div>
+<div style="background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 18px; padding: 32px">
+<div style="font-family: 'Instrument Serif', Georgia, serif; font-size: 72px; line-height: 0.9; color: #2E6B4F">2</div>
+<h3 style="font-size: 22px; font-weight: 600; margin: 22px 0 0">Get your plan</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #3E4C44; margin: 10px 0 0">Within 5 business days: a short video walkthrough of your store and a private plan page with a first look at your new homepage, an AI search snapshot, what moves and your fixed price.</p>
+</div>
+<div style="background: #173A2C; color: #F5F2EA; border-radius: 18px; padding: 32px">
+<div style="font-family: 'Instrument Serif', Georgia, serif; font-size: 72px; line-height: 0.9; color: #D8F36A">3</div>
+<h3 style="font-size: 22px; font-weight: 600; margin: 22px 0 0">Decide</h3>
+<p style="font-size: 16px; line-height: 1.6; color: #C9D6CE; margin: 10px 0 0">If it makes sense, reply to accept and we schedule kickoff. If it doesn't, keep the plan. No follow-up pressure.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- BILLING -->
+<section style="padding: 0 clamp(16px, 4vw, 56px) clamp(72px, 9vw, 128px)">
+<div style="max-width: 1240px; margin: 0 auto; background: #0F241C; color: #F5F2EA; border-radius: 28px; padding: clamp(32px, 5vw, 64px)">
+<div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: end; justify-content: space-between">
+<div style="flex: 1 1 480px; min-width: 0">
+<div style="font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #D8F36A">Milestone billing</div>
+<h2 style="font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(36px, 4vw, 56px); line-height: 1.04; letter-spacing: -0.015em; margin: 16px 0 0">Pay as the work <em style="color: #D8F36A">is delivered.</em></h2>
+</div>
+<p style="flex: 1 1 340px; min-width: 0; font-size: 17px; line-height: 1.6; color: #C9D6CE; margin: 0">No large deposit up front. You see a working store before most of the money changes hands.</p>
+</div>
+<div style="margin-top: 44px; display: flex; flex-wrap: wrap; gap: 10px">
+<div style="flex: 30 1 220px; min-width: 0; background: #173A2C; border: 1px solid #2E5443; border-radius: 16px; padding: 22px">
+<div style="font-family: 'Instrument Serif', Georgia, serif; font-size: 52px; line-height: 1; color: #D8F36A">30%</div>
+<div style="font-weight: 600; font-size: 17px; margin-top: 14px">Kickoff</div>
+<div style="font-size: 15px; color: #C9D6CE; margin-top: 6px; line-height: 1.5">When you sign the proposal</div>
+</div>
+<div style="flex: 30 1 220px; min-width: 0; background: #173A2C; border: 1px solid #2E5443; border-radius: 16px; padding: 22px">
+<div style="font-family: 'Instrument Serif', Georgia, serif; font-size: 52px; line-height: 1; color: #D8F36A">40%</div>
+<div style="font-weight: 600; font-size: 17px; margin-top: 14px">Staging delivered</div>
+<div style="font-size: 15px; color: #C9D6CE; margin-top: 6px; line-height: 1.5">Store built and your data moved, ready for your review</div>
+</div>
+<div style="flex: 40 1 260px; min-width: 0; background: #D8F36A; color: #0F241C; border-radius: 16px; padding: 22px">
+<div style="font-family: 'Instrument Serif', Georgia, serif; font-size: 52px; line-height: 1">30%</div>
+<div style="font-weight: 600; font-size: 17px; margin-top: 14px">Launch</div>
+<div style="font-size: 15px; color: #23402F; margin-top: 6px; line-height: 1.5">Store live and every redirect verified</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WHO DOES THE WORK -->
+<section id="team" style="padding: 0 clamp(16px, 4vw, 56px) clamp(72px, 9vw, 128px)">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 56px; align-items: start">
+<div style="flex: 1 1 420px; min-width: 0">
+<div style="font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #2E6B4F">Who does the work</div>
+<h2 style="font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.02; letter-spacing: -0.015em; margin: 16px 0 0">Experienced migration team. <em style="color: #2E6B4F">A real person you can reach.</em></h2>
+</div>
+<div style="flex: 1 1 520px; min-width: 0; display: grid; gap: 20px">
+<p style="font-size: 18px; line-height: 1.65; color: #3E4C44; margin: 0">Our development team has completed 35+ Shopify migrations as white-label work for other agencies. ReplatformPro offers that same work directly to store owners, without the agency markup in the middle.</p>
+<div style="padding: 20px; border: 1px solid #DCD6C6; border-radius: 18px; background: #FBFAF6">
+<div class="rp-bio" style="display: flex; gap: 16px; align-items: center">
+<img loading="lazy" decoding="async" src="images/jill.jpg" alt="Portrait of Jill, ReplatformPro's strategy and design lead" style="width: 80px; height: 80px; border-radius: 999px; object-fit: cover; flex: none; background: #1B2230">
+<p style="margin: 0; font-size: 16px; line-height: 1.5"><strong style="font-weight: 600">Strategy and design led by Jill</strong>, who has designed 50+ ecommerce stores across many categories and price points. She oversees every project to make sure your store sells better on day one, not just moves.</p>
+</div>
+<div style="margin-top: 18px; padding-top: 16px; border-top: 1px solid #E4DFCF; font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #2E6B4F">Jill's design track record</div>
+<div class="rp-bio-stats" style="margin-top: 12px; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px">
+<div style="min-width: 0"><div style="font-family: 'Instrument Serif', Georgia, serif; font-size: 34px; line-height: 1; color: #14231C">50+</div><div style="margin-top: 6px; font-size: 13px; line-height: 1.4; color: #3E4C44">ecommerce stores designed</div></div>
+<div style="min-width: 0"><div style="font-family: 'Instrument Serif', Georgia, serif; font-size: 34px; line-height: 1; color: #14231C">2% → 5%</div><div style="margin-top: 6px; font-size: 13px; line-height: 1.4; color: #3E4C44">checkout conversion after one product page redesign</div></div>
+<div style="min-width: 0"><div style="font-family: 'Instrument Serif', Georgia, serif; font-size: 34px; line-height: 1; color: #14231C">$39 → $64</div><div style="margin-top: 6px; font-size: 13px; line-height: 1.4; color: #3E4C44">average order value after a store redesign</div></div>
+</div>
+</div>
+<p style="font-size: 16px; line-height: 1.6; color: #3E4C44; margin: 0">Those 35+ projects shipped under other agencies' names, so instead of case studies, your free plan shows exactly how we'd handle your store.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; padding: 18px 20px; border-radius: 18px; background: #EEF5D4">
+<span style="width: 8px; height: 8px; border-radius: 999px; background: #2E6B4F; flex: none" aria-hidden="true"></span>
+<span style="font-weight: 600; font-size: 16px">Now booking mid-January starts</span>
+<span style="font-size: 16px; color: #3E4C44">Our team takes on only 3 projects at a time, so every store gets the attention it deserves.</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background: #EAE5D7; padding: clamp(72px, 9vw, 128px) clamp(16px, 4vw, 56px)">
+<div style="max-width: 880px; margin: 0 auto">
+<div style="font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #2E6B4F; text-align: center">Questions</div>
+<h2 style="font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(40px, 4.6vw, 64px); line-height: 1.02; letter-spacing: -0.015em; margin: 16px 0 0; text-align: center">What store owners <em style="color: #2E6B4F">ask us.</em></h2>
+<div style="margin-top: 48px; display: grid; gap: 10px">
+<details style="background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 16px; padding: 0 24px">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; font-size: 18px; font-weight: 600; min-height: 44px">How much does it cost?<span class="rp-plus" style="font-size: 26px; font-weight: 400; color: #2E6B4F; transition: transform .2s">+</span></summary>
+<p style="margin: 0 0 22px; font-size: 16px; line-height: 1.6; color: #3E4C44">Most WooCommerce migrations start at <strong style="font-weight: 600; color: #14231C">$7,500</strong>. Your exact price depends on your catalog size and what's connected to your store, which is why we ask two quick questions first. Your plan gives you one fixed price for the whole project, paid in three milestones. The price in your plan is the price you pay, unless you add to the scope.</p>
+</details>
+<details style="background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 16px; padding: 0 24px">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; font-size: 18px; font-weight: 600; min-height: 44px">Will Shopify cost more each month?<span class="rp-plus" style="font-size: 26px; font-weight: 400; color: #2E6B4F; transition: transform .2s">+</span></summary>
+<p style="margin: 0 0 22px; font-size: 16px; line-height: 1.6; color: #3E4C44">It depends on your setup, so here's how it adds up. Shopify plans run $39 to $399 a month ($29 to $299 billed yearly) and include hosting, security, SSL and checkout, things you likely pay for separately today.<sup style="font-size: 10px">7</sup> Card fees on Shopify Payments start at the same 2.9% + 30¢ most WooCommerce stores pay through Stripe, and drop on higher plans. Apps are the part that varies, so we use Shopify's built-in features first, only add the apps your store really needs, and check with you before adding any paid app.</p>
+</details>
+<details style="background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 16px; padding: 0 24px">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; font-size: 18px; font-weight: 600; min-height: 44px">Am I locked in to Shopify?<span class="rp-plus" style="font-size: 26px; font-weight: 400; color: #2E6B4F; transition: transform .2s">+</span></summary>
+<p style="margin: 0 0 22px; font-size: 16px; line-height: 1.6; color: #3E4C44">No. You own your products, customers, orders and content, and Shopify lets you export them anytime. You're not tied to us after launch either: the store, theme and accounts are yours.</p>
+</details>
+<details style="background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 16px; padding: 0 24px">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; font-size: 18px; font-weight: 600; min-height: 44px">What happens to my plugins?<span class="rp-plus" style="font-size: 26px; font-weight: 400; color: #2E6B4F; transition: transform .2s">+</span></summary>
+<p style="margin: 0 0 22px; font-size: 16px; line-height: 1.6; color: #3E4C44">We review every plugin during the build and cover each one the leanest way that works: a built-in Shopify feature first, then an app, or custom work when it's needed. Sometimes that means testing a couple of options to find the right fit. You approve any paid app before it's added, and most stores end up with far fewer moving parts.</p>
+</details>
+<details style="background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 16px; padding: 0 24px">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; font-size: 18px; font-weight: 600; min-height: 44px">Can't I just use Shopify's import app?<span class="rp-plus" style="font-size: 26px; font-weight: 400; color: #2E6B4F; transition: transform .2s">+</span></summary>
+<p style="margin: 0 0 22px; font-size: 16px; line-height: 1.6; color: #3E4C44">You can, and it's a good way to move products. It doesn't redirect your old URLs, rebuild your design, replace your plugins, protect your rankings or set up your product data for AI shopping. That's the difference between copying a store and launching one that works.</p>
+</details>
+<details style="background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 16px; padding: 0 24px">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; font-size: 18px; font-weight: 600; min-height: 44px">Have you worked with stores like mine?<span class="rp-plus" style="font-size: 26px; font-weight: 400; color: #2E6B4F; transition: transform .2s">+</span></summary>
+<p style="margin: 0 0 22px; font-size: 16px; line-height: 1.6; color: #3E4C44">Our team has moved stores selling [categories, confirm with dev team]. What really shapes a migration is how your store works: product options, subscriptions, bundles, wholesale pricing and the systems connected to it. If anything about your products needs special handling on Shopify, including Shopify's own product restrictions, your plan flags it before you commit to anything.</p>
+</details>
+<details style="background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 16px; padding: 0 24px">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; font-size: 18px; font-weight: 600; min-height: 44px">Will my store go down?<span class="rp-plus" style="font-size: 26px; font-weight: 400; color: #2E6B4F; transition: transform .2s">+</span></summary>
+<p style="margin: 0 0 22px; font-size: 16px; line-height: 1.6; color: #3E4C44">No. Your new store is built and tested on a staging site while WooCommerce keeps taking orders. We switch over once you've approved it.</p>
+</details>
+<details style="background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 16px; padding: 0 24px">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; font-size: 18px; font-weight: 600; min-height: 44px">Will I lose my Google rankings?<span class="rp-plus" style="font-size: 26px; font-weight: 400; color: #2E6B4F; transition: transform .2s">+</span></summary>
+<p style="margin: 0 0 22px; font-size: 16px; line-height: 1.6; color: #3E4C44">A short adjustment period is normal after any platform move, so we won't promise nothing shifts. We promise protection: every URL mapped and redirected, content and metadata preserved, and 30 days of monitoring with fixes included.</p>
+</details>
+<details style="background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 16px; padding: 0 24px">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; font-size: 18px; font-weight: 600; min-height: 44px">Do customer accounts move?<span class="rp-plus" style="font-size: 26px; font-weight: 400; color: #2E6B4F; transition: transform .2s">+</span></summary>
+<p style="margin: 0 0 22px; font-size: 16px; line-height: 1.6; color: #3E4C44">Accounts and order history move. Passwords usually can't transfer between platforms, so we set up a reactivation email that lets customers reset theirs in a click.</p>
+</details>
+<details style="background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 16px; padding: 0 24px">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; font-size: 18px; font-weight: 600; min-height: 44px">How long does a migration take?<span class="rp-plus" style="font-size: 26px; font-weight: 400; color: #2E6B4F; transition: transform .2s">+</span></summary>
+<p style="margin: 0 0 22px; font-size: 16px; line-height: 1.6; color: #3E4C44">Most WooCommerce migrations take 4 to 8 weeks from kickoff to launch. Your plan gives dated milestones based on your store, and a project planned now can be built in January and launched before spring.</p>
+</details>
+<details style="background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 16px; padding: 0 24px">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; font-size: 18px; font-weight: 600; min-height: 44px">Will I have to learn a whole new system?<span class="rp-plus" style="font-size: 26px; font-weight: 400; color: #2E6B4F; transition: transform .2s">+</span></summary>
+<p style="margin: 0 0 22px; font-size: 16px; line-height: 1.6; color: #3E4C44">Less than you'd think. Day to day, Shopify is simpler to run, with no plugins to update and no hosting to manage. Every project includes short video lessons on everyday tasks like adding products, processing orders and editing your homepage, plus a personal walkthrough recorded on your new store at launch.</p>
+</details>
+<details style="background: #FBFAF6; border: 1px solid #DCD6C6; border-radius: 16px; padding: 0 24px">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; font-size: 18px; font-weight: 600; min-height: 44px">Do I have to get on a call?<span class="rp-plus" style="font-size: 26px; font-weight: 400; color: #2E6B4F; transition: transform .2s">+</span></summary>
+<p style="margin: 0 0 22px; font-size: 16px; line-height: 1.6; color: #3E4C44">Never required. The whole process works over email. If you'd like to talk, just say so and we'll set one up.</p>
+</details>
+</div>
+</div>
+</section>
+
+<!-- FINAL CTA -->
+<section style="background: #D8F36A; color: #0F241C; padding: clamp(72px, 9vw, 120px) clamp(16px, 4vw, 56px)">
+<div style="max-width: 980px; margin: 0 auto; text-align: center">
+<div style="font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase">Plan now. Build in January. Launch before spring.</div>
+<h2 style="font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(44px, 5.6vw, 80px); line-height: 1; letter-spacing: -0.02em; margin: 20px 0 0">See what a move would look like <em>for your store.</em></h2>
+<p style="font-size: 19px; line-height: 1.55; margin: 24px auto 0; max-width: 620px; color: #23402F">Send your store URL. Within 5 business days you'll have a video walkthrough, a first look at your new homepage and an AI search snapshot of your store. Free, and yours to keep.</p>
+<div style="margin-top: 32px; display: flex; justify-content: center">
+<span class="rp-pill" style="display: inline-flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px 12px; padding: 9px 16px; border-radius: 999px; border: 1px solid #0F241C; font-size: 15px; font-weight: 500; color: #0F241C">
+<span style="width: 8px; height: 8px; border-radius: 999px; background: #0F241C; flex: none" aria-hidden="true"></span><span>Now booking mid-January starts</span><span class="rp-sep" aria-hidden="true" style="opacity: 0.4">·</span><span>3 projects at a time</span>
+</span>
+</div>
+<div style="margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 14px">
+<a href="mailto:jill@replatformpro.com?subject=Free%20migration%20plan%20for%20my%20WooCommerce%20store&amp;body=Hi%20Jill%2C%0A%0AI%27d%20like%20a%20free%20migration%20plan.%0A%0AStore%20URL%3A%0A%0AAnything%20custom%20about%20how%20your%20store%20works%3F%0A%0AWhich%20systems%20connect%20to%20your%20store%3F%0A" data-plan style="background: #0F241C; color: #D8F36A; text-decoration: none; font-weight: 600; font-size: 18px; padding: 20px 30px; border-radius: 999px; display: inline-flex; align-items: center; gap: 10px; min-height: 60px">Get my free migration plan<svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 9h12M10 4l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+</div>
+<p style="margin: 18px 0 0; font-size: 15px; font-weight: 500; color: #0F241C">For WooCommerce stores weighing a move to Shopify in 2027.</p>
+<p style="margin: 6px 0 0; font-size: 15px; color: #23402F">Or reply "yes" to any of our emails. jill@replatformpro.com</p>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #0F241C; color: #9FB3A8; padding: 40px clamp(16px, 4vw, 56px)">
+<div style="max-width: 1240px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 20px 40px; justify-content: space-between; align-items: start; font-size: 14px; line-height: 1.6">
+<div style="flex: 1 1 280px">
+<div style="color: #F5F2EA; font-weight: 600; font-size: 16px">ReplatformPro</div>
+<div>WooCommerce to Shopify migrations.</div>
+</div>
+<p style="flex: 2 1 480px; margin: 0; font-size: 12px; line-height: 1.6">1. Metorik, 6,000+ WooCommerce stores, Mar 2026. 2. Tinyfrog, WooCommerce maintenance issues, 2026. 3. Patchstack, State of WordPress Security in 2026. 4. Clickport audit of 75 WooCommerce stores, May 2026. 5. Chrome UX field data via corewebvitals.io, Oct 2026; Deloitte for Google, "Milliseconds Make Millions," 2019. AI shopping availability: on by default for eligible US Shopify merchants since March 2026; Shopify also offers options for non-Shopify merchants. 6. Brands named run their online stores on Shopify; they are not ReplatformPro clients. 7. Shopify plan and card rates as listed for US merchants in 2026; check shopify.com/pricing for current rates. Stripe standard US online rate, 2026. Shopify is a trademark of Shopify Inc. ReplatformPro is an independent service provider. © 2026 ReplatformPro.</p>
+</div>
+</footer>
+
+</div>
+
+<style>
+.rp-modal[hidden]{display:none!important}
+.rp-modal{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;padding:24px;padding-top:max(24px,env(safe-area-inset-top,0px));padding-bottom:max(24px,env(safe-area-inset-bottom,0px))}
+.rp-modal__backdrop{position:absolute;inset:0;background:rgba(10,24,18,.62)}
+.rp-modal__card{position:relative;width:100%;max-width:560px;max-height:100%;overflow-y:auto;box-sizing:border-box;background:#FBFAF6;color:#14231C;border-radius:24px;padding:40px 40px 32px;box-shadow:0 40px 100px rgba(0,0,0,.35);font-family:'Geist',system-ui,sans-serif}
+.rp-modal__close{position:absolute;top:16px;right:16px;width:40px;height:40px;border:0;border-radius:999px;background:#EAE5D7;color:#3E4C44;font-size:20px;line-height:1;cursor:pointer}
+.rp-modal__eyebrow{font-family:'Geist Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#2E6B4F}
+.rp-modal__title{margin:10px 0 0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:40px;line-height:1.02;padding-right:36px}
+.rp-modal__title em{color:#2E6B4F}
+.rp-modal__who{margin-top:14px;display:flex;align-items:center;gap:10px;font-size:14px;line-height:1.4;color:#3E4C44}
+.rp-modal__who img{width:32px;height:32px;flex:none;border-radius:999px;object-fit:cover}
+.rp-form{margin-top:22px;display:grid;gap:14px}
+.rp-form__row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.rp-form label{display:grid;gap:6px;font-size:13px;font-weight:600}
+.rp-form label small{font-weight:400;color:#6B7A71;font-size:13px}
+.rp-form input,.rp-form textarea{width:100%;box-sizing:border-box;font:inherit;font-size:16px;color:#14231C;background:#fff;border:1px solid #DCD6C6;border-radius:12px;padding:12px 14px;min-height:48px}
+.rp-form textarea{min-height:76px;resize:vertical}
+.rp-form input:focus,.rp-form textarea:focus,.rp-modal button:focus-visible{outline:2px solid #2E6B4F;outline-offset:2px}
+.rp-form__hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+.rp-form__submit{margin-top:8px;height:54px;border:0;border-radius:999px;background:#D8F36A;color:#0F241C;font:inherit;font-size:16px;font-weight:600;cursor:pointer}
+.rp-form__submit[disabled]{opacity:.6;cursor:wait}
+.rp-form__error{margin:0;font-size:14px;color:#8A2C0D;background:#FDE2D3;border-radius:10px;padding:10px 12px}
+.rp-modal__fine{margin:14px 0 0;font-size:13px;line-height:1.5;color:#4F5D55;text-align:center}
+.rp-modal__fine a{color:#14231C;font-weight:600}
+.rp-done{text-align:center;padding-top:8px}
+.rp-done__check{display:inline-flex;width:64px;height:64px;border-radius:999px;background:#D8F36A;align-items:center;justify-content:center}
+.rp-done__title{margin:20px 0 0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:44px;line-height:1.02}
+.rp-done__title em{color:#2E6B4F}
+.rp-done p{margin:14px auto 0;max-width:380px;font-size:16px;line-height:1.55;color:#3E4C44}
+.rp-done__sig{margin:22px auto 0;display:inline-flex;align-items:center;gap:10px;padding:10px 16px 10px 10px;border-radius:999px;background:#EAE5D7;font-size:14px}
+.rp-done__sig img{width:32px;height:32px;border-radius:999px;object-fit:cover}
+.rp-done__back{margin:22px auto 0;display:flex;align-items:center;justify-content:center;height:48px;padding:0 24px;border-radius:999px;border:1.5px solid #0F241C;background:transparent;color:#0F241C;font:inherit;font-size:15px;font-weight:600;cursor:pointer}
+body.rp-lock{overflow:hidden}
+@media (max-width:560px){
+  .rp-modal{padding:12px}
+  .rp-modal__card{padding:28px 22px 24px;border-radius:20px}
+  .rp-modal__title{font-size:32px}
+  .rp-form__row{grid-template-columns:1fr}
+}
+</style>
+<div class="rp-modal" id="plan-modal" hidden>
+  <div class="rp-modal__backdrop" data-close></div>
+  <div class="rp-modal__card" role="dialog" aria-modal="true" aria-labelledby="plan-title">
+    <button type="button" class="rp-modal__close" data-close aria-label="Close">×</button>
+    <div id="plan-form-view">
+      <div class="rp-modal__eyebrow">Your free migration plan</div>
+      <h2 class="rp-modal__title" id="plan-title">See your store on Shopify <em>before you decide.</em></h2>
+      <div class="rp-modal__who"><img src="images/jill.jpg" alt=""><span>Jill reads every request. Your plan arrives within 5 business days.</span></div>
+      <form class="rp-form" id="plan-form" novalidate>
+        <label for="pf-url">Store URL
+          <input id="pf-url" name="store_url" type="text" inputmode="url" autocomplete="url" placeholder="yourstore.com" required></label>
+        <div class="rp-form__row">
+          <label for="pf-name">Your name
+            <input id="pf-name" name="name" type="text" autocomplete="name" required></label>
+          <label for="pf-email">Email
+            <input id="pf-email" name="email" type="email" autocomplete="email" required></label>
+        </div>
+        <label for="pf-custom">Anything custom about how your store works? <small>(optional)</small>
+          <textarea id="pf-custom" name="custom_features" placeholder="Product options, subscriptions, bundles, wholesale pricing"></textarea></label>
+        <label for="pf-systems">Which systems connect to your store? <small>(optional)</small>
+          <input id="pf-systems" name="connected_systems" type="text" placeholder="Email, shipping, accounting, ERP"></label>
+        <div class="rp-form__hp" aria-hidden="true"><label for="pf-gotcha">Leave this empty<input id="pf-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label></div>
+        <p class="rp-form__error" id="pf-error" role="alert" hidden></p>
+        <button type="submit" class="rp-form__submit" id="pf-submit">Send my request</button>
+      </form>
+      <p class="rp-modal__fine">Free. No sales call. Prefer email? Write to <a href="mailto:jill@replatformpro.com">jill@replatformpro.com</a> or reply "yes" to any of our emails.</p>
+    </div>
+    <div class="rp-done" id="plan-done-view" hidden>
+      <span class="rp-done__check"><svg width="28" height="28" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#0F241C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <h2 class="rp-done__title" tabindex="-1" id="plan-done-title">Got it, <em id="pd-name">thanks.</em></h2>
+      <p id="pd-text">I'll be in touch within one business day if I have any questions. Your plan arrives within 5 business days.</p>
+      <div class="rp-done__sig"><img src="images/jill.jpg" alt=""><span>Jill, ReplatformPro</span></div>
+      <button type="button" class="rp-done__back" data-close>Back to the page</button>
+    </div>
+  </div>
+</div>
+
+<script src="site.js" defer></script>
+</body>
+</html>
