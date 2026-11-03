@@ -2,7 +2,7 @@
 
 /* 1. Paste your Formspree form address here, e.g. "https://formspree.io/f/abcd1234".
       Until it's set, the form opens a pre-filled email instead. */
-var FORMSPREE_ENDPOINT = "";
+var FORMSPREE_ENDPOINT = "https://formspree.io/f/mdeeykba";
 
 (function () {
   /* ---------- Card stack: auto-advance on phones and tablets ---------- */
