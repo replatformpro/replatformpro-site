@@ -97,7 +97,8 @@ var FORMSPREE_ENDPOINT = "";
 
     if (!FORMSPREE_ENDPOINT) { /* fallback until Formspree is connected */
       var body = "Hi Jill,\n\nI'd like a free migration plan.\n\nStore URL: " + url + "\nName: " + name + "\nEmail: " + email +
-        "\n\nAnything custom about how my store works: " + form.custom_features.value + "\n\nSystems connected to my store: " + form.connected_systems.value + "\n";
+        "\n\nAnything custom about how my store works: " + form.custom_features.value + "\n\nSystems connected to my store: " + form.connected_systems.value +
+        "\n\nHow I picture the new store: " + ((form.querySelector("input[name=design_direction]:checked") || {}).value || "") + "\n";
       window.location.href = "mailto:jill@replatformpro.com?subject=" + encodeURIComponent("Plan request: " + store) + "&body=" + encodeURIComponent(body);
       return;
     }

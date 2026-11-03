@@ -597,6 +597,12 @@ details[open] .rp-plus{transform:rotate(45deg)}
 .rp-form label small{font-weight:400;color:#6B7A71;font-size:13px}
 .rp-form input,.rp-form textarea{width:100%;box-sizing:border-box;font:inherit;font-size:16px;color:#14231C;background:#fff;border:1px solid #DCD6C6;border-radius:12px;padding:12px 14px;min-height:48px}
 .rp-form textarea{min-height:76px;resize:vertical}
+.rp-form__dir{margin:0;padding:0;border:0;display:grid;gap:8px}
+.rp-form__dir legend{padding:0;margin-bottom:6px;font-size:13px;font-weight:600}
+.rp-form__dir legend small{font-weight:400;color:#6B7A71;font-size:13px}
+.rp-form .rp-form__dir label{display:flex;align-items:center;gap:10px;font-weight:400;font-size:15px;line-height:1.35;background:#fff;border:1px solid #DCD6C6;border-radius:12px;padding:11px 14px;cursor:pointer}
+.rp-form .rp-form__dir label:has(input:checked){border-color:#2E6B4F;background:#F1F6EC}
+.rp-form .rp-form__dir input{width:18px;height:18px;min-height:0;margin:0;padding:0;flex:none;accent-color:#2E6B4F}
 .rp-form input:focus,.rp-form textarea:focus,.rp-modal button:focus-visible{outline:2px solid #2E6B4F;outline-offset:2px}
 .rp-form__hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
 .rp-form__submit{margin-top:8px;height:54px;border:0;border-radius:999px;background:#D8F36A;color:#0F241C;font:inherit;font-size:16px;font-weight:600;cursor:pointer}
@@ -641,6 +647,12 @@ body.rp-lock{overflow:hidden}
           <textarea id="pf-custom" name="custom_features" placeholder="Product options, subscriptions, bundles, wholesale pricing"></textarea></label>
         <label for="pf-systems">Which systems connect to your store? <small>(optional)</small>
           <input id="pf-systems" name="connected_systems" type="text" placeholder="Email, shipping, accounting, ERP"></label>
+        <fieldset class="rp-form__dir"><legend>How do you picture the new store? <small>(optional)</small></legend>
+          <label><input type="radio" name="design_direction" value="As close to the current look as possible"> As close to the current look as possible</label>
+          <label><input type="radio" name="design_direction" value="A refresh: same brand, more current"> A refresh: same brand, more current</label>
+          <label><input type="radio" name="design_direction" value="Something new: open to a bigger redesign"> Something new: open to a bigger redesign</label>
+          <label><input type="radio" name="design_direction" value="Not sure"> Not sure</label>
+        </fieldset>
         <div class="rp-form__hp" aria-hidden="true"><label for="pf-gotcha">Leave this empty<input id="pf-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label></div>
         <p class="rp-form__error" id="pf-error" role="alert" hidden></p>
         <button type="submit" class="rp-form__submit" id="pf-submit">Send my request</button>
